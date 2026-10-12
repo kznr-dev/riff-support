@@ -68,11 +68,11 @@
 
   <!-- ================= English ================= -->
   <section lang="en" data-section="en">
-    <p>Last updated: October 2, 2026</p>
+    <p>Last updated: October 12, 2026</p>
     <p>Riff ("the app") is an iPhone app developed and published by Kazunari Natsume ("the developer"), an independent developer. This policy explains what information the app does and does not handle.</p>
     <hr>
     <h2>Summary</h2>
-    <ul><li>The app <strong>does not collect any personal information.</strong></li><li>No account is required.</li><li>The app contains <strong>no analytics, no advertising SDKs, and no tracking of any kind.</strong></li><li>Saved content is stored locally in Riff. The developer cannot see it.</li><li>Book search, link previews, and purchases use the services described below. You can also choose to share content or save export and backup files outside the app.</li></ul>
+    <ul><li>The app <strong>does not collect any personal information.</strong></li><li>No account is required.</li><li>The app contains <strong>no analytics, no advertising SDKs, and no tracking of any kind.</strong></li><li>Saved content is stored locally in Riff. The developer cannot see it.</li><li>Book search, link previews, and purchases use the services described below. If you turn on auto-add for a collection, Apple’s Private Cloud Compute is used to judge your words. You can also choose to share content or save export and backup files outside the app.</li></ul>
     <hr>
     <h2>1. Information the developer collects</h2>
     <p><strong>None.</strong></p>
@@ -85,7 +85,7 @@
     <p>This data lives in the app's private storage on your device and is read <strong>only by Riff and the Riff widget.</strong></p>
     <hr>
     <h2>3. Network requests</h2>
-    <p>The app connects to the internet <strong>only in response to something you do.</strong></p>
+    <p>The app connects to the internet <strong>only in response to something you do, or while a feature you have turned on is running.</strong></p>
     <h3>3-1. Looking up books</h3>
     <p>When you use <strong>Book Search</strong> or <strong>Book Scan</strong>, the <strong>search text you typed (a title, an author name, and so on) or the ISBN</strong> is sent to the following services:</p>
     <table><thead><tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr></thead><tbody><tr><td>Google Books API</td><td>Title, author, publisher, and cover image</td><td>https://policies.google.com/privacy</td></tr><tr><td>openBD</td><td>Bibliographic data and covers for Japanese books</td><td>https://openbd.jp/</td></tr><tr><td>Open Library</td><td>Cover images</td><td>https://archive.org/about/terms.php</td></tr></tbody></table>
@@ -98,6 +98,12 @@
     <p>Amazon opens <strong>only when you tap the link.</strong> The developer receives only aggregate referral reports from Amazon and <strong>cannot see who bought what.</strong> Your activity on Amazon is governed by Amazon's own privacy notice.</p>
     <h3>3-4. Sharing and export chosen by you</h3>
     <p>Share cards and Send with Riff pass selected content to the recipient or service you choose in the iOS share sheet. A <code>.riffshare</code> file can include saved text, sources, people, media, and the sender's profile name or image where relevant. Markdown export writes library files to the folder you choose. If the destination is a cloud folder or another app, that provider handles the copy under its own terms and privacy policy. None of these files passes through a developer server.</p>
+    <h3>3-5. Collection auto-add</h3>
+    <p>On supported iPhones (iOS 27 or later, with Apple Intelligence), you can turn on Auto-add for each collection. It is off by default, and the app shows what will be sent before you turn it on.</p>
+    <p>For each collection with Auto-add on, while the app is open, the following is sent to Apple’s Private Cloud Compute to judge whether a word fits the collection’s description:</p>
+    <ul><li>The collection’s name and description</li><li>The text and headline of the words being judged (quotes and notes), and the original quote when a note is a reflection on it</li><li>Information about each word’s source (title, type, publication year, authors, publisher, ISBN, series), the kind of word, and the date it was added</li></ul>
+    <p>This does not go through any server operated by the developer, and the developer cannot see it. Processing on Private Cloud Compute follows Apple’s privacy protections, and the content is used only to make the judgment. Words judged to fit are added to that collection. The text of your words is never changed.</p>
+    <p>You can turn Auto-add off at any time in the collection’s Info tab, and undo all words it added. Auto-add is turned off again after restoring from a backup or receiving a collection from another device.</p>
     <hr>
     <h2>4. Camera and photo access</h2>
     <ul><li><strong>Camera</strong> — used to scan the ISBN barcode on a book and to photograph words. The video is processed entirely on your device and is never transmitted; only the ISBN that was read is used for the lookup described in 3-1.</li><li><strong>Photos</strong> — used to attach photos and videos to a quote, and to save share-card images you create.</li></ul>
@@ -127,11 +133,11 @@
 
   <!-- ================= 日本語 ================= -->
   <section lang="ja" data-section="ja" hidden>
-    <p>最終更新日: 2026年10月2日</p>
+    <p>最終更新日: 2026年10月12日</p>
     <p>Riff（以下「本アプリ」）は、Kazunari Natsume（以下「開発者」）が個人で開発・提供する iPhone 向けアプリです。本ポリシーは、本アプリがどのような情報を扱い、扱わないかを説明します。</p>
     <hr>
     <h2>要約</h2>
-    <ul><li>本アプリは、<strong>利用者の個人情報を収集しません。</strong></li><li>アカウント登録は不要です。</li><li>解析ツール・広告 SDK・トラッキングは<strong>一切使用していません。</strong></li><li>保存した内容は、端末内のRiffに保存されます。開発者はそれを見ることができません。</li><li>書籍検索・リンクのプレビュー・購入では、以下に説明する外部サービスを利用します。また、利用者が選んだ共有・書き出し・バックアップで、アプリの外へコピーを渡すことができます。</li></ul>
+    <ul><li>本アプリは、<strong>利用者の個人情報を収集しません。</strong></li><li>アカウント登録は不要です。</li><li>解析ツール・広告 SDK・トラッキングは<strong>一切使用していません。</strong></li><li>保存した内容は、端末内のRiffに保存されます。開発者はそれを見ることができません。</li><li>書籍検索・リンクのプレビュー・購入では、以下に説明する外部サービスを利用します。コレクションの自動追加をオンにした場合は、AppleのPrivate Cloud Computeで言葉を判定します。また、利用者が選んだ共有・書き出し・バックアップで、アプリの外へコピーを渡すことができます。</li></ul>
     <hr>
     <h2>1. 開発者が収集する情報</h2>
     <p><strong>ありません。</strong></p>
@@ -144,7 +150,7 @@
     <p>これらは端末上のアプリ専用領域に保存され、<strong>本アプリと本アプリのウィジェットからのみ</strong>アクセスされます。</p>
     <hr>
     <h2>3. 外部との通信</h2>
-    <p>本アプリが外部と通信するのは、<strong>利用者が明示的に操作したとき</strong>だけです。</p>
+    <p>本アプリが外部と通信するのは、<strong>利用者が明示的に操作したとき、または利用者がオンにした機能が動くとき</strong>だけです。</p>
     <h3>3-1. 書籍の情報を調べるとき</h3>
     <p>「本の検索」「本のスキャン」を使ったときに、<strong>利用者が入力した検索語（書名・著者名など）または ISBN</strong> が次のサービスへ送信されます。</p>
     <table><thead><tr><th>送信先</th><th>目的</th><th>プライバシーポリシー</th></tr></thead><tbody><tr><td>Google Books API</td><td>書名・著者名・出版社・表紙画像の取得</td><td>https://policies.google.com/privacy</td></tr><tr><td>openBD</td><td>日本の書籍の書誌情報・表紙画像の取得</td><td>https://openbd.jp/</td></tr><tr><td>Open Library</td><td>表紙画像の取得</td><td>https://archive.org/about/terms.php</td></tr></tbody></table>
@@ -157,6 +163,12 @@
     <p>リンクを<strong>タップしたときにのみ</strong> Amazon が開きます。開発者が受け取るのは Amazon からの集計された成果情報のみで、<strong>誰が何を買ったかを知ることはできません。</strong> Amazon 上での行動は Amazon のプライバシー規約に従います。</p>
     <h3>3-4. 利用者が選ぶ共有と書き出し</h3>
     <p>共有カードと「Riffで送る」は、利用者がiOSの共有シートで選んだ相手やサービスへ内容を渡します。<code>.riffshare</code> ファイルには、保存した本文・出典・人物・写真や動画、必要に応じて送り主のプロフィール名や画像が含まれます。Markdown書き出しは、利用者が選んだフォルダへファイルを保存します。クラウドのフォルダや他のアプリを選んだ場合、コピーの取扱いはそのサービスの規約とプライバシーポリシーに従います。開発者のサーバーを経由することはありません。</p>
+    <h3>3-5. コレクションの自動追加</h3>
+    <p>対応するiPhone（iOS 27以降・Apple Intelligence対応機種）では、コレクションごとに「自動追加」をオンにできます。既定はオフで、オンにする前に送信内容を確認する画面を表示します。</p>
+    <p>オンにしたコレクションについて、アプリを開いている間、次の内容をAppleのPrivate Cloud Computeへ送り、説明に合う言葉かどうかを判定します。</p>
+    <ul><li>コレクションの名前と説明</li><li>判定する言葉（引用・メモ）の本文と見出し、メモが感想の場合は元の引用</li><li>その言葉の出典の情報（書名・種別・出版年・著者・出版社・ISBN・シリーズ）、言葉の種別と追加した日付</li></ul>
+    <p>開発者のサーバーは経由せず、開発者が内容を見ることはありません。Private Cloud Computeでの処理はAppleのプライバシー保護の仕組みに従い、送った内容は判定のためだけに使われます。判定の結果、合うと判断された言葉がそのコレクションに追加されます。言葉の本文は変更しません。</p>
+    <p>自動追加はコレクションの「情報」タブからいつでもオフにでき、自動追加した言葉をまとめて取り消すこともできます。バックアップから復元したときや別の端末から受け取ったときは、自動追加はオフに戻ります。</p>
     <hr>
     <h2>4. カメラと写真へのアクセス</h2>
     <ul><li><strong>カメラ</strong> — 書籍の ISBN バーコードの読み取りと、言葉の撮影に使用します。読み取った映像は端末内で処理され、外部に送信されません（読み取った ISBN のみが 3-1 の書誌検索に使われます）。</li><li><strong>写真</strong> — 引用への写真・動画の添付と、作成した共有カード画像の保存に使用します。</li></ul>
@@ -186,11 +198,11 @@
 
   <!-- ================= 한국어 ================= -->
   <section lang="ko" data-section="ko" hidden>
-    <p>최종 업데이트: 2026년 10월 2일</p>
+    <p>최종 업데이트: 2026년 10월 12일</p>
     <p>Riff(이하 "본 앱")는 Kazunari Natsume(이하 "개발자")가 개인으로 개발·제공하는 iPhone 앱입니다. 본 방침은 본 앱이 어떤 정보를 다루고, 다루지 않는지를 설명합니다.</p>
     <hr>
     <h2>요약</h2>
-    <ul><li>본 앱은 <strong>이용자의 개인정보를 수집하지 않습니다.</strong></li><li>계정 등록이 필요하지 않습니다.</li><li>분석 도구·광고 SDK·트래킹을 <strong>일절 사용하지 않습니다.</strong></li><li>저장한 내용은 기기 안의 Riff에 저장되며 개발자는 볼 수 없습니다.</li><li>도서 검색, 링크 미리보기, 구매에는 아래에 설명된 서비스를 이용합니다. 사용자가 공유, 내보내기, 백업을 선택하면 앱 밖으로 사본을 보낼 수도 있습니다.</li></ul>
+    <ul><li>본 앱은 <strong>이용자의 개인정보를 수집하지 않습니다.</strong></li><li>계정 등록이 필요하지 않습니다.</li><li>분석 도구·광고 SDK·트래킹을 <strong>일절 사용하지 않습니다.</strong></li><li>저장한 내용은 기기 안의 Riff에 저장되며 개발자는 볼 수 없습니다.</li><li>도서 검색, 링크 미리보기, 구매에는 아래에 설명된 서비스를 이용합니다. 컬렉션의 자동 추가를 켜면 Apple의 Private Cloud Compute에서 글귀를 판단합니다. 사용자가 공유, 내보내기, 백업을 선택하면 앱 밖으로 사본을 보낼 수도 있습니다.</li></ul>
     <hr>
     <h2>1. 개발자가 수집하는 정보</h2>
     <p><strong>없습니다.</strong></p>
@@ -203,7 +215,7 @@
     <p>이 데이터는 기기의 앱 전용 영역에 저장되며, <strong>본 앱과 본 앱의 위젯에서만</strong> 접근합니다.</p>
     <hr>
     <h2>3. 외부와의 통신</h2>
-    <p>본 앱이 외부와 통신하는 것은 <strong>이용자가 명시적으로 조작했을 때</strong>뿐입니다.</p>
+    <p>본 앱이 외부와 통신하는 것은 <strong>이용자가 명시적으로 조작했을 때, 또는 이용자가 켠 기능이 동작할 때</strong>뿐입니다.</p>
     <h3>3-1. 책 정보를 조회할 때</h3>
     <p><strong>책 검색</strong>이나 <strong>책 스캔</strong>을 사용할 때 <strong>이용자가 입력한 검색어(제목·저자명 등) 또는 ISBN</strong>이 다음 서비스로 전송됩니다.</p>
     <table><thead><tr><th>전송처</th><th>목적</th><th>개인정보 처리방침</th></tr></thead><tbody><tr><td>Google Books API</td><td>제목·저자·출판사·표지 이미지 조회</td><td>https://policies.google.com/privacy</td></tr><tr><td>openBD</td><td>일본 도서의 서지 정보·표지 이미지 조회</td><td>https://openbd.jp/</td></tr><tr><td>Open Library</td><td>표지 이미지 조회</td><td>https://archive.org/about/terms.php</td></tr></tbody></table>
@@ -216,6 +228,12 @@
     <p>링크를 <strong>눌렀을 때만</strong> Amazon이 열립니다. 개발자가 받는 것은 Amazon의 집계된 실적 정보뿐이며, <strong>누가 무엇을 샀는지는 알 수 없습니다.</strong> Amazon에서의 활동은 Amazon의 개인정보 규정을 따릅니다.</p>
     <h3>3-4. 사용자가 선택하는 공유와 내보내기</h3>
     <p>공유 카드와 'Riff로 보내기'는 iOS 공유 시트에서 사용자가 선택한 사람이나 서비스에 내용을 전달합니다. <code>.riffshare</code> 파일에는 저장한 글, 출처, 인물, 사진과 동영상, 필요한 경우 보낸 사람의 프로필 이름이나 이미지가 포함될 수 있습니다. Markdown 내보내기는 선택한 폴더에 파일을 저장합니다. 클라우드 폴더나 다른 앱을 선택하면 사본의 처리는 해당 서비스의 약관과 개인정보 처리방침을 따릅니다. 개발자 서버를 거치지 않습니다.</p>
+    <h3>3-5. 컬렉션 자동 추가</h3>
+    <p>지원되는 iPhone(iOS 27 이상, Apple Intelligence 지원 기기)에서는 컬렉션마다 ‘자동 추가’를 켤 수 있습니다. 기본값은 꺼짐이며, 켜기 전에 전송되는 내용을 확인하는 화면을 표시합니다.</p>
+    <p>자동 추가를 켠 컬렉션에 대해, 앱을 열고 있는 동안 다음 내용을 Apple의 Private Cloud Compute로 보내 설명에 맞는 글귀인지 판단합니다.</p>
+    <ul><li>컬렉션의 이름과 설명</li><li>판단할 글귀(인용문·메모)의 본문과 제목, 메모가 인용문에 대한 감상이면 원래 인용문</li><li>그 글귀의 출처 정보(제목·종류·출판 연도·저자·출판사·ISBN·시리즈), 글귀의 종류와 추가한 날짜</li></ul>
+    <p>개발자의 서버를 거치지 않으며, 개발자는 그 내용을 볼 수 없습니다. Private Cloud Compute에서의 처리는 Apple의 개인정보 보호 체계를 따르며, 보낸 내용은 판단에만 사용됩니다. 맞는다고 판단된 글귀가 해당 컬렉션에 추가되며, 글귀의 본문은 바뀌지 않습니다.</p>
+    <p>자동 추가는 컬렉션의 ‘정보’ 탭에서 언제든지 끌 수 있고, 자동으로 추가된 글귀를 한꺼번에 취소할 수도 있습니다. 백업에서 복원하거나 다른 기기에서 받은 경우에는 자동 추가가 다시 꺼집니다.</p>
     <hr>
     <h2>4. 카메라와 사진 접근</h2>
     <ul><li><strong>카메라</strong> — 도서의 ISBN 바코드 인식과 글귀 촬영에 사용합니다. 읽어 들인 영상은 기기 안에서 처리되며 외부로 전송되지 않습니다(인식한 ISBN만 3-1의 서지 조회에 사용됩니다).</li><li><strong>사진</strong> — 인용문에 사진·동영상을 첨부하거나, 만든 공유 카드 이미지를 저장하는 데 사용합니다.</li></ul>
